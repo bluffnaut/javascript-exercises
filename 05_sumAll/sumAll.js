@@ -1,11 +1,11 @@
 const sumAll = function(min, max) {
 // Error prevention:
-    if (!Number.isInteger(min) || !Number.isInteger(max)) return "Error";
-    if (min < 0 || max < 0) return "Error";
+    if (!Number.isInteger(min) || !Number.isInteger(max)) return "ERROR";
+    if (min < 0 || max < 0) return "ERROR";
     if (min > max) {
         const temporaryMin = min;
-        max = temporaryMin;
         min = max;
+        max = temporaryMin;
     };
 
     // Incremental loop:
